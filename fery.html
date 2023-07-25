@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body {
+  color: #ededed;
+}
+.header {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background: #1ecbe1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  
+}
+.logo {
+  font-size: 10px;
+ text-decoration: none;
+  font-weight: 700;
+}
+.navbar a {
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
+  font-weight: 80;
+  margin-left: 5px;
+  transition: 2s;
+}
+.nabbar a:hover,
+.navbar a.active {
+  color: #white;
+}
+.Home {
+  height: 100vh;
+  background: #081b29 no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.home-content {
+  max-width: 1000px;
+}
+.home-content h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+.home-content .fery {
+  font-size: 20px;
+  color: #00abf0;
+}
+@keyframes berjalan {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+  
+}
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+  
+}
+.btn-box a {
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 20px;
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+.btn-box a:hover {
+  color: #00abf0;
+}
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color : #00abf0;
+}
+.btn-box a:nth-child(2):hover {
+  color: #081b29;
+}
+.btn-box a:nth-child(2)::before {
+  background: #00abf0;
+}
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 5s;
+}
+.btn-box a:hover::before {
+  width: 100%;
+}
+.home-sci {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+.home-sci a:hover {
+  color: #081b29;
+}
+
+.home-sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: .5s;
+}
+.home-sci a:hover::before {
+  width: 100%;
+}
+.home-imghover {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+}
+</style>
+<body>
+  
+  <header class="header">
+    <a href="#" class="logo">
+      <img id="#" src="yay.png" width="100" width="100">
+    </a>
+    
+    <nav class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">portofolio</a>
+      <a href="#">Contact</a>
+      
+    </nav>
+    
+  </header>
+  <section class="Home">
+    <div class="home-content">
+      <h3>Hello,It's me</h3>
+      <h1>Fery Ardiansyah</h1>
+      <h2>And I'm a <span class="fery"></span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing  elit. Consequuntur veritatis ullam perferendis quas  cupiditate. Voluptatem obcaecati iste qui.</p>
+      <div class="btn-box">
+        <a href="#">hire me</a>
+        <a href="#">Let'talk</a>
+      </div>
+    </div>
+    <div class="home-sci">
+      <a href="https://www.facebook.com/fery.u.strike4"><i class='bx bxl-facebook'></i></a>
+      <a href="https://twitter.com/ferystarx"><i class='bx bxl-twitter'></i></a>
+      <a href="https://tiktok.com/@fazonk"><i class='bx bxl-tiktok'></i></a>
+      
+    </div>
+  </section>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.fery', {
+      strings: ['Fronten Developer' , 'Youtuber' , 'Gamers' , 'Kuli pabrik' , 'Traiding' , 'Blokchain' , 'Airdrop'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+  </script>
+</body>
+</body>
+</html>
